@@ -1,0 +1,17 @@
+@keyframes float {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(10px, -10px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  
+  @keyframes float2 {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(-8px, 8px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  
+  @keyframes float3 {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(5px, 5px); }
+    100% { transform: translate(0px, 0px); }
+  }

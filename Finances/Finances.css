@@ -1,0 +1,32 @@
+/* Styles only for screens between 768px and 1288px */
+@media (min-width: 768px) and (max-width: 1288px) {
+  .finances-text {
+    padding-right: 80px !important;
+    gap: 20px !important;
+    flex-basis: 60% !important;
+  }
+
+  .finances-title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+  }
+
+  .finances-paragraph {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+  }
+
+  .finances-cards {
+    gap: 15px !important;
+    flex-basis: 40% !important;
+  }
+  .myheight{
+    height: 100vh !important;
+  }
+  .mywidth{
+    padding-right: 30px !important;
+  }
+  .littlemargin{
+    margin-right: 70px !important;
+  }
+}
