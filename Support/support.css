@@ -1,0 +1,76 @@
+@keyframes ufofloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes ufofloat2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.float-animation-1 {
+    animation: ufofloat 4s ease-in-out infinite;
+}
+
+.float-animation-2 {
+    animation: ufofloat2 5s ease-in-out infinite;
+}
+
+
+.support-card-bg {
+    transform: rotate(-10deg);
+    transition: all 0.2s ease;
+}
+
+/* .group:hover .support-card-bg {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+} */
+
+.support-card{
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+/* .group:hover .support-card{
+    transform: scale(0.9) translateY(5%);
+    border-radius: 6px;
+} */
+
+.support-icon{
+    transition: all 0.4s ease;
+}
+
+/* .group:hover .support-icon{
+    transform: scale(1.5);
+} */
+
+
+.pCard{
+    transition: 0.5s;
+}
+
+
+.pCard:hover{
+    transform: scale(1.03);
+}

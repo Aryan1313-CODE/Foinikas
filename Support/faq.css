@@ -1,0 +1,13 @@
+.support-box{
+    container-type: size;
+}
+
+.support-box h5{
+    font-size: 20px;
+}
+
+@container (min-height: 800px) {
+    .support-box h5 {
+      font-size: 4rem;
+    }
+  }

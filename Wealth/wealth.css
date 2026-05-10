@@ -1,0 +1,42 @@
+.wealth-main-cont{
+    margin-top: -525px;
+}
+@media screen and (min-width: 1300px){
+    .wealth-main-cont{
+        margin-top: -360px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .wealth-main-cont{
+        margin-top: -425px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .wealth-main-cont{
+        margin-top: -450px;
+    }
+}
+@media screen and (min-width: 1800px){
+    .wealth-main-cont{
+        margin-top: -500px;
+    }
+}
+@media screen and (min-width: 1900px){
+    .wealth-main-cont{
+        margin-top: -600px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .wealth-main-cont{
+        margin-top: -800px;
+    }
+} 
+
+@media screen and (max-width: 650px){
+    .wealth-main-cont{
+        margin-top: 0px;
+    }
+}

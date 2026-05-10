@@ -1,0 +1,17 @@
+
+
+.hide-cell {
+    display: none;
+    transform: translateY(5px);
+    transition: all 0.1s ease;
+  }
+  
+  .active-cell {
+    display: block;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+    border-bottom-right-radius :12px;
+    border-bottom-left-radius :12px;
+    background-color: #8B008B;
+    color: #fff;
+  }
