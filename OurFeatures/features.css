@@ -1,0 +1,72 @@
+.fcard {
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    transition: transform 0.8s ease-in-out;
+}
+
+.away {
+    transform: translateY(-120vh) scale(0.9) rotate(-5deg);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.fcard {
+    height: 600px;
+    width: 600px;
+}
+
+.c1 {
+    background: #3940F4;
+    background: linear-gradient(23deg, rgba(57, 64, 244, 1) 25%, rgba(100, 110, 255, 1) 50%);
+}
+
+.c2 {
+    background: #009D9D;
+    background: linear-gradient(23deg, rgba(0, 157, 157, 1) 54%, rgba(0, 180, 180, 1) 67%);
+}
+
+
+.c3 {
+    background: #00547F;
+    background: linear-gradient(23deg, rgba(0, 84, 127, 1) 48%, rgba(0, 110, 150, 1) 65%);
+}
+
+.c4 {
+    background: #C736A4;
+    background: linear-gradient(23deg, rgba(199, 54, 164, 1) 54%, rgba(220, 80, 190, 1) 67%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1800px) {
+    .fcard {
+        height: 400px;
+        width: 400px;
+    }
+
+    .c1 {
+        background: #3940F4;
+        background: linear-gradient(23deg, rgba(57, 64, 244, 1) 25%, rgba(100, 110, 255, 1) 50%);
+    }
+
+    .c2 {
+        background: #2A7B9B;
+        background: linear-gradient(45deg, rgba(42, 123, 155, 1) 10%, rgba(87, 199, 133, 1) 68%);
+    }
+
+    .c3 {
+        background: #00547F;
+        background: linear-gradient(23deg, rgba(0, 84, 127, 1) 54%, rgba(0, 110, 150, 1) 67%);
+    }
+
+    .c4 {
+        background: #9a00b5;
+        background: linear-gradient(45deg, rgba(154, 0, 181, 1) 10%, rgba(199, 54, 165, 1) 68%);
+    }
+
+
+}
