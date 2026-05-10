@@ -1,0 +1,592 @@
+@import "tailwindcss";
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-image: url('./assets/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.extraLargeText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 7.5rem;
+}
+
+.hero-text {
+    font-family: 'Satoshi', sans-serif;
+
+}
+
+.titleText {
+    font-family: "Crimson Pro", serif;
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: #fff;
+    text-align: left !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.secondaryTitle {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 85.13px;
+    letter-spacing: -2%;
+    /* text-align: center; */
+
+}
+
+.tertiaryTitle {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* text-align: center; */
+
+}
+
+.paragraph {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 50px;
+    padding: 20px 0;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.menu-item {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.primary-btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(195, 65, 114, 1);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.home-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    color: rgba(195, 65, 114, 1);
+    background: #fff;
+    transition: 0.5s;
+
+}
+
+.secondary-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(195, 65, 114, 1);
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.secondary-btn:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+.form-label {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    /* height: 30px; */
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.primary-btn:hover{
+    transform: scale(1.00001);
+}
+
+.home-btn:hover{
+    transform: scale(1.00001);
+}
+
+.secondary-btn:hover{
+    transform: scale(1.00001);
+}
+
+
+
+
+@media screen and (max-width: 4000px) {
+    .titleText {
+        font-family: "Crimson Pro", serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: left;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .secondaryTitle {
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 44.13px;
+        letter-spacing: -2%;
+        /* text-align: center; */
+
+    }
+
+    .paragraph {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Satoshi', sans-serif;
+        line-height: normal;
+        padding: 0px 0;
+    }
+
+    .primary-btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+        background: rgba(195, 65, 114, 1);
+        cursor: pointer;
+        transition: 0.5s;
+    
+    }
+    
+    
+    .secondary-btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgba(195, 65, 114, 1);
+        background: #fff;
+    
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .home-btn {
+        width: 250px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+        color: rgba(195, 65, 114, 1);
+        background: #fff;
+        transition: 0.5s;
+    
+    }
+
+    .primary-btn:hover{
+        transform: scale(1.1);
+    }
+
+    .home-btn:hover{
+        transform: scale(1.1);
+    }
+
+    .secondary-btn:hover{
+        transform: scale(1.1);
+    }
+    .tabfooter{
+        height: 550px !important;
+        padding-bottom: 10px !important;
+    }
+    .topping{
+        margin-top: 60px !important;
+    }
+}
+
+/* Styles only for screens between 768px and 1288px */
+@media (min-width: 768px) and (max-width: 1288px) {
+  .titleText {
+        font-family: "Crimson Pro", serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: left;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .secondaryTitle {
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 44.13px;
+        letter-spacing: -2%;
+        /* text-align: center; */
+
+    }
+    
+
+    .paragraph {
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 500;
+        font-family: 'Satoshi', sans-serif;
+        line-height: normal;
+        padding: 0px 0;
+    }
+
+    .primary-btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+        background: rgba(195, 65, 114, 1);
+        cursor: pointer;
+        transition: 0.5s;
+    
+    }
+    
+    .secondary-btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgba(195, 65, 114, 1);
+        background: #fff;
+    
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .home-btn {
+        width: 250px;
+        height: 45px;
+        border-radius: 30px;
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+        color: rgba(195, 65, 114, 1);
+        background: #fff;
+        transition: 0.5s;
+    
+    }
+
+    .primary-btn:hover{
+        transform: scale(1.1);
+    }
+
+    .home-btn:hover{
+        transform: scale(1.1);
+    }
+
+    .secondary-btn:hover{
+        transform: scale(1.1);
+    }
+    .customcard{
+        width: 40vw !important;
+    }
+    .tabfooter{
+        height: 550px !important;
+        padding-bottom: 10px !important;
+    }
+    .customtext{
+        font-size: 10px !important;
+    }
+
+    .customimg{
+        display: none;
+    }
+    .customheight{
+        height: 500px !important;
+    }
+    .customheight2{
+        height: 300px !important;
+    }
+    .aboutheight{
+        height: fit-content !important;
+    }
+
+    .abouttitle{
+        font-size: 10px !important;
+    }
+
+    .forauthleft{
+        font-size: 0.7rem !important;
+    }
+    .adjustedinput{
+        height: 20px !important;
+    }
+    .adjustform{
+        height: fit-content  !important;
+        
+    }
+    .topping{
+        margin-top: 90px !important;
+    }
+    .moveup{
+        padding-top: 140px !important;
+    }
+    .littlemargin{
+        margin-top: 20px !important;
+    }
+    .placing{
+        margin-bottom: 300px;
+        font-size: 40px;
+    }
+    .adjustingup{
+        margin-top: -200px;
+    }
+    
+
+}
+@media (min-width: 1289px) and (max-width: 1550px) {
+.forauthleft{
+        font-size: 1vw !important;
+    }
+    .adjustedinput{
+        height: 40px !important;
+    }
+    .adjustform{
+        height: fit-content  !important;
+    }
+    .moveup{
+        padding-top: 140px !important;
+    }
+    .littlemargin{
+        margin-top: 20px !important;
+    }
+    .topping{
+        margin-top: -100px;
+    }
+    
+    
+
+}
+
+
+@media (max-width: 575px) {
+    /* Mobile-specific styles here */
+
+    .extraLargeText {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 4rem;
+    }
+    .tabfooter{
+        height: 1050px !important;
+        padding-bottom: 10px !important;
+    }
+    .titleText {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: left;
+
+    }
+
+    .secondaryTitle {
+        font-weight: 600;
+        font-size: 1.8rem;
+
+    }
+
+    .tertiaryTitle {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 100%;
+
+
+    }
+    .heightformobile2{
+        margin-top: 360px;
+    }
+
+    .paragraph {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .givestyle{
+        z-index: 1000 !important;
+    }
+    .topping{
+        margin-top: 50px !important;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .tabfooter{
+        height: 1050px !important;
+        padding-bottom: 10px !important;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1400px){
+      .giventitle{
+        font-size: 1.6vw !important;
+      }
+      .givenpara{
+        font-size: 0.8vw !important;
+      }
+      
+}
+@media (min-width: 768px) and (max-width: 1400px){
+      .giventitle2{
+        font-size: 1.2vw !important;
+      }
+      .givenpara2{
+        font-size: 1vw !important;
+      }
+      
+      
+}
+@media (min-width: 768px) and (max-width: 1000px){
+      
+      .adjustmargin{
+          margin-top: -20px;
+      }
+      .adjustpaddingtop{
+        padding-top: 50px;
+      }
+}
+@media(min-width: 4000px){
+    .verywide{
+        margin-right: 1vw !important;
+    }
+}
+@media (min-width: 550px) and (max-width: 760px){
+.gapadjust{
+    margin-top: 0.5px !important;
+    
+    
+}
+}
+@media (min-width: 550px) and (max-width: 780px){
+   .helloadjust{
+    margin-top: 60px !important;
+   }
+   .heightadjust{
+    height: 140vh !important;
+   }
+}
+@media (max-width: 767px){
+    .mobilecare{
+        height: 150% !important;
+      }
+      .littleadjust{
+        margin-top: 90px;
+      }
+}
+@media (max-width: 350px){
+    .tabfooter{
+        height: 180vh !important;
+    }
+}
+@media (min-width: 1289px) {
+
+    .placing{
+        margin-top: 6vw;
+        font-size: 60px;
+    }
+
+}
+@media (min-width: 2600px) {
+
+    /* Heading */
+    .placing {
+        margin-top: 150px;
+        font-size: 100px; /* very large heading */
+    }
+
+    /* Adjust left panel height on ultra-wide screens */
+    .customisedheight {
+        height: 117vh;
+        margin-top: -50px;
+    }
+
+    /* FEATURE TITLES */
+    .featureTitle {
+        font-size: 2.4rem !important;     /* large, readable */
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    /* FEATURE PARAGRAPH TEXT */
+    .featureText {
+        font-size: 1.8rem !important;     /* larger paragraph */
+        line-height: 1.6 !important;
+        color: #fff;
+    }
+
+    /* FEATURE ICONS (SVGs) */
+    .featureIcon {
+        width: 120px !important;
+        height: 120px !important;
+        
+    }
+
+    /* OPTIONAL: increase wrapper icon bg box */
+    .iconWrapper {
+        width: 130px !important;
+        height: 160px !important;
+        
+    }
+}
+
+
+
+
+
+

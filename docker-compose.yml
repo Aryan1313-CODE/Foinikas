@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: foinikas-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-foinikas123}
+      MONGO_INITDB_DATABASE: foinikas
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - foinikas-network
+
+  # Backend Service
+  backend:
+    build: ./backend
+    container_name: foinikas-backend
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://admin:${MONGO_PASSWORD:-foinikas123}@mongodb:27017/foinikas?authSource=admin
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mongodb
+    ports:
+      - "5001:5001"
+    networks:
+      - foinikas-network
+
+  # Frontend Service
+  frontend:
+    build: ./frontend
+    container_name: foinikas-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+    networks:
+      - foinikas-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  foinikas-network:
+    driver: bridge 
