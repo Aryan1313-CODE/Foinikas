@@ -1,0 +1,35 @@
+
+
+.tick{
+    color: #fff !important;
+}
+
+.domain{
+    display: none !important;
+}
+
+line{
+    display: none !important;
+}
+
+.recharts-pie-label-text{
+    display: none !important;
+}
+
+.recharts-pie-label-line{
+    display: none !important;
+}
+
+.recharts-legend-item{
+    font-size: 0.5rem !important;
+}
+
+.recharts-symbols{
+    transform: translate(15px,15px) scale(1) !important;
+}
+
+tspan{
+    color: #fff !important;
+    margin-top: 5px !important;
+}
+

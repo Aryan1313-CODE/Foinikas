@@ -1,0 +1,82 @@
+.spotlight-texth {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 2rem;
+  font-family: "Crimson Pro", serif;
+  --x: 50%;
+  --y: 50%;
+}
+
+.spotlight-texth::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background: radial-gradient(circle at var(--x) var(--y),
+      rgba(139, 0, 139, 1) 0%,
+      rgba(139, 0, 139, 0.4) 10%,
+      rgba(255, 255, 255, 0) 20%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.spotlight-texth.hovering::after {
+  opacity: 1;
+  text-shadow: none;
+}
+
+.h-card {
+  transition: 0.5s;
+}
+
+.h-card:hover {
+  transform: scale(1.05);
+}
+
+.spotlight-container {
+  width: auto;
+}
+
+/* Large screen fix */
+@media screen and (min-width: 1800px) {
+  .spotlight-container {
+    width: 750px;
+  }
+}
+
+/* 📱 Tablet-specific styles (768px – 1288px) */
+@media screen and (min-width: 768px) and (max-width: 1288px) {
+  .home-wrapper {
+    padding-bottom: 30px; /* extra space at bottom */
+  }
+
+  .moving-title {
+    margin-left: 40px; /* shift text slightly right */
+  }
+
+  .spotlight-texth {
+    font-size: 48px; /* slightly smaller font for tablets */
+    padding: 0 1rem;
+  }
+
+  .spotlight-container {
+    width: 600px; /* narrower text container */
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1288px) {
+  .button-container {
+    margin-top: 80px !important;
+  }
+}
+

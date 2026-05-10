@@ -1,0 +1,200 @@
+.ic1 {
+    background: linear-gradient(to bottom right, #4338ca, #9333ea, #3b82f6);
+}
+
+
+.ic2 {
+    background: linear-gradient(to bottom right, #db2777, #a855f7);
+}
+
+.ic3 {
+    background: linear-gradient(135deg, rgb(0, 157, 157) 0%, rgb(0, 179, 179) 50%, rgb(0, 201, 201) 100%);
+}
+
+.ic4 {
+    background: linear-gradient(to bottom right, #c084fc, #60a5fa);
+}
+
+.ic5 {
+    background: linear-gradient(to bottom right, #4338ca, #9333ea, #3b82f6);
+}
+
+
+.car-cards {
+    background: linear-gradient(180deg, #4F012E 0%, #AA0063 100%);
+}
+
+
+.spotlight-text {
+    /* font-size: 5rem; */
+    /* Reduced font size */
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 2rem;
+    font-family: "Crimson Pro", serif;
+    /* display: inline-block; */
+    --x: 50%;
+    --y: 50%;
+}
+
+.spotlight-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background: radial-gradient(circle at var(--x) var(--y),
+            rgba(139, 0, 139, 1) 0%,
+            rgba(139, 0, 139, 0.4) 10%,
+            rgba(255, 255, 255, 0) 20%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.spotlight-text.hovering::after {
+    opacity: 1;
+    text-shadow: none;
+}
+
+/* Styles.css */
+.app {
+    overflow: hidden;
+    /* background: #c87f9b; */
+    background: linear-gradient(180deg, #4F012E 0%, #8c0663 100%)
+  }
+  
+  .first-container, .last-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+  }
+  
+  .container {
+    width: 120%; /* Changed from 400% to 100vw */
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    /* background: #c87f9b; */
+    background: linear-gradient(180deg, #4F012E 0%, #8c0663 100%)
+  }
+  
+  .panel {
+    width: 100vw; /* Each panel takes full viewport width */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0; /* Prevent panels from shrinking */
+  }
+  
+  /* Panel colors */
+
+  .shade{
+    /* background: #c87f9b; */
+
+    background: linear-gradient(180deg, #4F012E 0%, #8c0663 100%)
+  }
+  .blue { background: #4285F4; }
+  .red { background: #EA4335; }
+  .orange { background: #FBBC05; }
+  .purple { background: #673AB7; }
+  
+  .description {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .scroll-down {
+    margin-top: 20px;
+  }
+  
+  .arrow {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  /* Boat styles */
+.boat-container {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 10;
+}
+
+.boat {
+  transform: rotate(90deg); /* Makes the boat face sideways */
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+/* Update arrow to point right */
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg); /* Now points right */
+  margin: 0 auto;
+}
+
+
+.flip-horizontal {
+  transform: rotate(-20deg) scaleX(-1);
+}
+
+.flip-horizontal-rotate {
+  transform: rotate(-65deg) scaleX(-1);
+}
+
+.boat-container{
+  bottom: -8%;
+}
+
+@media screen and (max-width: 1800px){
+  .boat-container{
+    bottom: -14%;
+  }
+}
+
+/* Hide scrollbar but keep scrolling functional */
+.custom-scroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px; /* ultra thin scrollbar */
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Completely invisible scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
